@@ -1,0 +1,31 @@
+{
+  "output": "artifacts/video.mp4",
+  "mediaType": "video/mp4",
+  "durationSeconds": 8.0,
+  "width": 1376,
+  "height": 768,
+  "framesPerSecond": 24,
+  "frameCount": 192,
+  "videoCodec": "h264",
+  "pixelFormat": "yuv420p",
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "audioContent": "intentional silence",
+  "sizeBytes": 824447,
+  "checks": {
+    "ffprobeProperties": "passed",
+    "fullFFmpegDecode": "passed, no errors",
+    "unencodedFirstAndLastFramesMatchReference": true,
+    "visualInspection": "source-frame contact sheet and decoded MP4 frame inspected",
+    "under64MiB": true,
+    "fastStartMoovBeforeMdat": true
+  },
+  "limitations": [
+    "2.5D reference-image puppet animation rather than fully articulated 3D motion",
+    "Simplified illustrated rear view and planar foreshortening during spin",
+    "Hoof gestures use image deformation; no true articulated camera-facing pointing",
+    "Approximate forehead repair during sunglasses slide",
+    "Lossy H.264 encoding changes individual source pixels"
+  ]
+}
